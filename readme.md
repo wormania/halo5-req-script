@@ -1,6 +1,6 @@
 # Halo 5 REQ Script
 
-Script that collates your acquired Halo 5 REQ data from the Halo Waypoint website, formatted for pasting in to the Halo 5 REQ Tracker Spreadsheet (Link needed when spreadsheet is finalised)
+Script that collates your acquired Halo 5 REQ data from the Halo Waypoint website, formatted for pasting in to the [Halo 5 REQ Tracker Spreadsheet](https://docs.google.com/spreadsheets/d/1JYZ4TYIWPzVl5rplr4exQfRw2JjZQhjEEh56XruDzJI)
 
 ## Installation
 
@@ -21,10 +21,10 @@ Open the [Raw script page](https://github.com/wormania/halo5-req-script/raw/mast
 Then navigate to the next Requisition page, and with the console selected you can push Up and then Enter to repeat the previous script.
 
 ###Chrome with Tampermonkey:
-Navigate to your Requisition page on the Halo Waypoint. Open the console with F12 and you will see your REQ Data for the current page listed. Copy this list of REQs to the spreadsheet's "Paste" sheet. Repeat through the next requisition pages.
+Navigate to your Requisition page on the Halo Waypoint. Open the console with F12 and you will see your REQ Data for the current page listed. Copy this list (triple click to quickly select all) of REQs to the spreadsheet's "Paste" sheet. Repeat through the next requisition pages.
 
 ###Chrome without Tampermonkey:
-Open the [Raw script page](https://github.com/wormania/halo5-req-script/raw/master/halo5-req.user.js), copy the entire script (Ctrl-A, Ctrl-C). Navigate to the first Requsition page, open the console with F12 and paste the script, then hit Enter. Then you will see your REQ Data for the current page listed in the console, copy this list to the spreadsheet.  
+Open the [Raw script page](https://github.com/wormania/halo5-req-script/raw/master/halo5-req.user.js), copy the entire script (Ctrl-A, Ctrl-C). Navigate to the first Requsition page, open the console with F12 and paste the script, then hit Enter. Then you will see your REQ Data for the current page listed in the console, copy this list (triple click to quickly select all) to the spreadsheet.  
 Navigate to the next Requisition page, and with the console selected you can push Up and then Enter to repeat the previous script.
 
 ## History
