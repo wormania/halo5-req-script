@@ -6,6 +6,11 @@
 // @grant       none
 // ==/UserScript==
 
+//Don't run script if you are not logged in
+if (document.body.textContent.indexOf("Enter your credentials to view this data") > -1 ) {
+  return
+}
+
 var x = document.querySelectorAll('[data-name]');
 var str1 = "";
 for (i = 0; i < x.length; i++) {
