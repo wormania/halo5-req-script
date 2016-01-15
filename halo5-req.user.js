@@ -85,9 +85,3 @@ window.prompt("Copy to clipboard: Ctrl+C, Enter", str1);
 } else {
 console.log(str1)
 }
-
-//TODO:
-//See if it's possible to automate Weapon Skin data
-//Maybe just COUNT those with duplicate skin names
-//
-//Better use of continue would remove a lot of the more complicated if/else logic (would probably require a complete refactor)

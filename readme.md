@@ -28,5 +28,6 @@ Open the [Raw script page](https://github.com/wormania/halo5-req-script/raw/mast
 Navigate to the next Requisition page, and with the console selected you can push Up and then Enter to repeat the previous script.
 
 ## History
+0.92: Added support for weapon skins, stop script running if not logged in to Waypoint (EN Language only)
 0.91: Readme added, removed pop up Message Box for those running Chrome (The Chrome message box is limited to 2000 characters, which truncates the data). Removed unnecessary console.logs to allow proper Chrome support  
 0.9: First Public Version. Support for all REQs except Weapon Skins. Proper browser support limited to just Firefox
