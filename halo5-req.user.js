@@ -2,13 +2,13 @@
 // @name        Halo 5 Auto-REQ
 // @namespace   https://github.com/wormania
 // @include     https://www.halowaypoint.com/*/games/halo-5-guardians/xbox-one/requisitions/categories/*?ownedOnly=False
-// @version     0.91
+// @version     0.92
 // @grant       none
 // ==/UserScript==
 
 //Don't run script if you are not logged in
 if (document.body.textContent.indexOf("Enter your credentials to view this data") > -1 ) {
-  return
+  throw new Error("Not Logged in.");
 }
 
 var x = document.querySelectorAll('[data-name]');
