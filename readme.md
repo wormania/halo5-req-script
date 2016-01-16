@@ -24,10 +24,11 @@ Then navigate to the next Requisition page, and with the console selected you ca
 Navigate to your Requisition page on the Halo Waypoint. Open the console with F12 and you will see your REQ Data for the current page listed. Copy this list (triple click to quickly select all) of REQs to the spreadsheet's "Paste" sheet. Repeat through the next requisition pages.
 
 ###Chrome without Tampermonkey:
-Open the [Raw script page](https://github.com/wormania/halo5-req-script/raw/master/halo5-req.user.js), copy the entire script (Ctrl-A, Ctrl-C). Navigate to the first Requsition page, open the console with F12 and paste the script, then hit Enter. Then you will see your REQ Data for the current page listed in the console, copy this list (triple click to quickly select all) to the spreadsheet.  
+Open the [Raw script .txt](https://raw.githubusercontent.com/wormania/halo5-req-script/master/halo5-req.txt), copy the entire script (Ctrl-A, Ctrl-C). Navigate to the first Requsition page, open the console with F12 and paste the script, then hit Enter. Then you will see your REQ Data for the current page listed in the console, copy this list (triple click to quickly select all) to the spreadsheet.  
 Navigate to the next Requisition page, and with the console selected you can push Up and then Enter to repeat the previous script.
 
 ## History
-0.92: Added support for weapon skins, stop script running if not logged in to Waypoint (EN Language only)
+0.92a: Fix crash on Chrome  
+0.92: Added support for weapon skins, stop script running if not logged in to Waypoint (EN Language only)  
 0.91: Readme added, removed pop up Message Box for those running Chrome (The Chrome message box is limited to 2000 characters, which truncates the data). Removed unnecessary console.logs to allow proper Chrome support  
 0.9: First Public Version. Support for all REQs except Weapon Skins. Proper browser support limited to just Firefox
