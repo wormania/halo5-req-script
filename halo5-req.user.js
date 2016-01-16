@@ -2,7 +2,7 @@
 // @name        Halo 5 Auto-REQ
 // @namespace   https://github.com/wormania
 // @include     https://www.halowaypoint.com/*/games/halo-5-guardians/xbox-one/requisitions/categories/*?ownedOnly=False
-// @version     0.92a
+// @version     0.93
 // @grant       none
 // ==/UserScript==
 
@@ -15,7 +15,7 @@ var x = document.querySelectorAll('[data-name]');
 var str1 = "";
 for (i = 0; i < x.length; i++) {
   //Skip REQ if it's not owned (for customisation items and loadout) or no certification (for power weapons/vehicles)
-  if (x[i].dataset.subcategory in {"ArmorSuit":" ","Helmet":" ","Emblem":" ","":" ","Equipment":" ","Visor":" ","Stance":" ","Assassination":" ","WeaponSkin":" ",} && x[i].dataset.haveOwned === "False" || x[i].dataset.subcategory in {"PowerWeapon":"","Vehicle":""} && x[i].dataset.hasCertification === "False") {
+  if (x[i].dataset.subcategory in {"ArmorSuit":" ","Helmet":" ","Emblem":" ","":" ","Equipment":" ","Visor":" ","Stance":" ","Assassination":" ","WeaponSkin":" ",} && x[i].dataset.haveOwned === "False" || x[i].dataset.subcategory in {"PowerWeapon":"","Vehicle":"","Equipment":""} && x[i].dataset.hasCertification === "False") {
   continue //This line can be commented out to collect *every* REQ, useful for testing
   }
   //Initialise/clear all loadout names
