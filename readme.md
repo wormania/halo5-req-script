@@ -1,6 +1,6 @@
 # Halo 5 REQ Script
 
-Script that collates your acquired Halo 5 REQ data from the Halo Waypoint website, formatted for pasting in to the [Halo 5 REQ Tracker Spreadsheet](https://docs.google.com/spreadsheets/d/1JYZ4TYIWPzVl5rplr4exQfRw2JjZQhjEEh56XruDzJI)
+Script that collates your acquired Halo 5 REQ data from the Halo Waypoint website, formatted for pasting in to the [Halo 5 REQ Tracker Spreadsheet](https://docs.google.com/spreadsheets/d/1fiI-65mJWDKIt5pGIfkrwxbjBc32BVHKqdnuqydLZPI)
 
 ## Installation
 
@@ -28,6 +28,7 @@ Open the [Raw script .txt](https://raw.githubusercontent.com/wormania/halo5-req-
 Navigate to the next Requisition page, and with the console selected you can push Up and then Enter to repeat the previous script.
 
 ## History
+0.94: Updated spreadsheet for "Infinity's Armory" content, add fix for the blank-card waypoint bug
 0.93: Stop Powerups without Certifications being counted  
 0.92a: Fix crash on Chrome  
 0.92: Added support for weapon skins, stop script running if not logged in to Waypoint (EN Language only)  

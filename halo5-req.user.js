@@ -2,7 +2,7 @@
 // @name        Halo 5 Auto-REQ
 // @namespace   https://github.com/wormania
 // @include     https://www.halowaypoint.com/*/games/halo-5-guardians/xbox-one/requisitions/categories/*?ownedOnly=False
-// @version     0.93
+// @version     0.94
 // @grant       none
 // ==/UserScript==
 
@@ -14,7 +14,11 @@ if (document.body.textContent.indexOf("Enter your credentials to view this data"
 var x = document.querySelectorAll('[data-name]');
 var str1 = "";
 for (i = 0; i < x.length; i++) {
-  //Skip REQ if it's not owned (for customisation items and loadout) or no certification (for power weapons/vehicles)
+  //Skip REQ if it's a blank item (Shows occasionally during patch time/server issues)
+  if (x[i].dataset.name === "") {
+    continue
+  }
+  //Skip REQ if it's not owned (for customisation items and loadout) or no certification (for power weapons/vehicles/powerups)
   if (x[i].dataset.subcategory in {"ArmorSuit":" ","Helmet":" ","Emblem":" ","":" ","Equipment":" ","Visor":" ","Stance":" ","Assassination":" ","WeaponSkin":" ",} && x[i].dataset.haveOwned === "False" || x[i].dataset.subcategory in {"PowerWeapon":"","Vehicle":"","Equipment":""} && x[i].dataset.hasCertification === "False") {
   continue //This line can be commented out to collect *every* REQ, useful for testing
   }
