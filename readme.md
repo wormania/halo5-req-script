@@ -28,6 +28,7 @@ Open the [Raw script .txt](https://raw.githubusercontent.com/wormania/halo5-req-
 Navigate to the next Requisition page, and with the console selected you can push Up and then Enter to repeat the previous script.
 
 ## History
+0.94a: Improved handling for Halo 2 Battle Rifle  
 0.94: Updated spreadsheet for "Infinity's Armory" content, add fix for the blank-card waypoint bug  
 0.93: Stop Powerups without Certifications being counted  
 0.92a: Fix crash on Chrome  

@@ -2,7 +2,7 @@
 // @name        Halo 5 Auto-REQ
 // @namespace   https://github.com/wormania
 // @include     https://www.halowaypoint.com/*/games/halo-5-guardians/xbox-one/requisitions/categories/*?ownedOnly=False
-// @version     0.94
+// @version     0.94a
 // @grant       none
 // ==/UserScript==
 
@@ -28,6 +28,11 @@ for (i = 0; i < x.length; i++) {
   var attachmentName = ""
   //Check if REQ is a loadout weapon, as they all have duplicate names and need special handling
   if (x[i].dataset.name.split(" ").slice(-1)[0] in {"Rifle":"","AR":"","BR":"",} && x[i].dataset.subcategory === "") {
+  //Special handling for the Halo 2 Battle Rifle
+  if (x[i].dataset.name === "Halo 2 Battle Rifle"){
+  str1 = str1.concat("Battle RifleHalo 2 Battle Rifle\tX\t")
+  continue
+  }
   //First two words of the description give the "proper" name of the weapon for AR/BR
   weaponName = x[i].dataset.description.split(" ")[0] + " " + x[i].dataset.description.split(" ")[1]
   //Words 4 + 5 give the type of sight used
